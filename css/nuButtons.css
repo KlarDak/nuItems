@@ -1,0 +1,360 @@
+.nubutton {
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 0.25em;
+  padding: 0.75em 2em;
+  cursor: pointer;
+  min-width: 9em;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+.nubutton:focus {
+  outline: none;
+}
+.nubutton.normal-blue {
+  color: white;
+  background-color: #326eee;
+  transition: 0.5s;
+}
+.nubutton.normal-blue:hover, .nubutton.normal-blue:focus {
+  box-shadow: 0 0 8px 0 rgba(50, 110, 238, 0.5);
+}
+.nubutton.normal-blue:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.normal-blue:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.normal-lightblue {
+  color: white;
+  background-color: #08b2f8;
+  transition: 0.5s;
+}
+.nubutton.normal-lightblue:hover, .nubutton.normal-lightblue:focus {
+  box-shadow: 0 0 8px 0 rgba(8, 178, 148, 0.5);
+}
+.nubutton.normal-lightblue:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.normal-lightblue:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.normal-red, .nubutton.normal-error {
+  color: white;
+  background-color: #ff2727;
+  transition: 0.5s;
+}
+.nubutton.normal-red:hover, .nubutton.normal-red:focus, .nubutton.normal-error:hover, .nubutton.normal-error:focus {
+  box-shadow: 0 0 8px 0 rgba(255, 39, 39, 0.5);
+}
+.nubutton.normal-red:disabled, .nubutton.normal-error:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.normal-red:disabled:focus, .nubutton.normal-error:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.normal-orange, .nubutton.normal-warning {
+  color: white;
+  background-color: #ff8800;
+  transition: 0.5s;
+}
+.nubutton.normal-orange:hover, .nubutton.normal-orange:focus, .nubutton.normal-warning:hover, .nubutton.normal-warning:focus {
+  box-shadow: 0 0 8px 0 rgba(255, 136, 74, 0.5);
+}
+.nubutton.normal-orange:disabled, .nubutton.normal-warning:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.normal-orange:disabled:focus, .nubutton.normal-warning:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.normal-green, .nubutton.normal-success {
+  color: white;
+  background-color: #29cc29;
+  transition: 0.5s;
+}
+.nubutton.normal-green:hover, .nubutton.normal-green:focus, .nubutton.normal-success:hover, .nubutton.normal-success:focus {
+  box-shadow: 0 0 8px 0 rgba(41, 204, 41, 0.5);
+}
+.nubutton.normal-green:disabled, .nubutton.normal-success:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.normal-green:disabled:focus, .nubutton.normal-success:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.normal-grey, .nubutton.normal-disabled {
+  color: white;
+  background-color: grey;
+  transition: 0.5s;
+}
+.nubutton.normal-grey:hover, .nubutton.normal-grey:focus, .nubutton.normal-disabled:hover, .nubutton.normal-disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.normal-grey:disabled, .nubutton.normal-disabled:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.normal-grey:disabled:focus, .nubutton.normal-disabled:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.light-blue {
+  color: #4a4aff;
+  background-color: #d4e2ff;
+}
+.nubutton.light-blue:disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.light-lightblue {
+  color: #4a4aff;
+  background-color: #abdbff;
+}
+.nubutton.light-lightblue:disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.light-red, .nubutton.light-error {
+  color: #ff2828;
+  background-color: #ffd4d4;
+}
+.nubutton.light-red:disabled, .nubutton.light-error:disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.light-orange, .nubutton.light-warning {
+  color: #e17707;
+  background-color: #ffd8af;
+}
+.nubutton.light-orange:disabled, .nubutton.light-warning:disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.light-green, .nubutton.light-success {
+  color: #00a600;
+  background-color: #caf6ca;
+}
+.nubutton.light-green:disabled, .nubutton.light-success:disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.light-grey, .nubutton.light-disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.light-grey:disabled, .nubutton.light-disabled:disabled {
+  color: #505050;
+  background-color: #e5e5e5;
+}
+.nubutton.ghost-blue {
+  background-color: white;
+  color: #4a4aff;
+  border: 1px solid rgba(74, 74, 255, 0.6);
+  transition: 0.5s;
+}
+.nubutton.ghost-blue:hover, .nubutton.ghost-blue:focus {
+  color: white;
+  background-color: #4a4aff;
+}
+.nubutton.ghost-lightblue {
+  background-color: white;
+  color: #08b2f8;
+  border: 1px solid rgba(8, 178, 248, 0.6);
+  transition: 0.5s;
+}
+.nubutton.ghost-lightblue:hover, .nubutton.ghost-lightblue:focus {
+  color: white;
+  background-color: #08b2f8;
+}
+.nubutton.ghost-red, .nubutton.ghost-error {
+  background-color: white;
+  color: #ff2828;
+  border: 1px solid rgba(255, 40, 40, 0.6);
+  transition: 0.5s;
+}
+.nubutton.ghost-red:hover, .nubutton.ghost-red:focus, .nubutton.ghost-error:hover, .nubutton.ghost-error:focus {
+  color: white;
+  background-color: #ff2828;
+}
+.nubutton.ghost-orange, .nubutton.ghost-warning {
+  background-color: white;
+  color: #ea7c08;
+  border: 1px solid rgba(234, 124, 8, 0.6);
+  transition: 0.5s;
+}
+.nubutton.ghost-orange:hover, .nubutton.ghost-orange:focus, .nubutton.ghost-warning:hover, .nubutton.ghost-warning:focus {
+  color: white;
+  background-color: #ea7c08;
+}
+.nubutton.ghost-green, .nubutton.ghost-success {
+  background-color: white;
+  color: #25b725;
+  border: 1px solid rgba(37, 183, 37, 0.6);
+  transition: 0.5s;
+}
+.nubutton.ghost-green:hover, .nubutton.ghost-green:focus, .nubutton.ghost-success:hover, .nubutton.ghost-success:focus {
+  color: white;
+  background-color: #25b725;
+}
+.nubutton.raised-blue {
+  background-color: white;
+  color: #4a4aff;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.nubutton.raised-lightblue {
+  background-color: white;
+  color: #08b2f8;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.nubutton.raised-red, .nubutton.raised-error {
+  background-color: white;
+  color: #ff2828;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.nubutton.raised-orange, .nubutton.raised-warning {
+  background-color: white;
+  color: #ea7c08;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.nubutton.raised-green, .nubutton.raised-success {
+  background-color: white;
+  color: #00a600;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.nubutton.radius-blue {
+  color: white;
+  background-color: #326eee;
+  transition: 0.5s;
+  border-radius: 5em;
+  padding: 0.75em 2em;
+  min-width: 5em;
+}
+.nubutton.radius-blue:hover, .nubutton.radius-blue:focus {
+  box-shadow: 0 0 8px 0 rgba(50, 110, 238, 0.6);
+}
+.nubutton.radius-blue:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.radius-blue:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.radius-blue i {
+  padding: 0;
+  margin-right: 0.5em;
+}
+.nubutton.radius-lightblue {
+  color: white;
+  background-color: #08b2f8;
+  transition: 0.5s;
+  border-radius: 5em;
+  padding: 0.75em 2em;
+  min-width: 5em;
+}
+.nubutton.radius-lightblue:hover, .nubutton.radius-lightblue:focus {
+  box-shadow: 0 0 8px 0 rgba(8, 148, 248, 0.6);
+}
+.nubutton.radius-lightblue:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.radius-lightblue:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.radius-lightblue i {
+  padding: 0;
+  margin-right: 0.5em;
+}
+.nubutton.radius-red, .nubutton.radius-error {
+  color: white;
+  background-color: #ff2828;
+  transition: 0.5s;
+  border-radius: 5em;
+  padding: 0.75em 2em;
+  min-width: 5em;
+}
+.nubutton.radius-red:hover, .nubutton.radius-red:focus, .nubutton.radius-error:hover, .nubutton.radius-error:focus {
+  box-shadow: 0 0 8px 0 rgba(255, 40, 40, 0.6);
+}
+.nubutton.radius-red:disabled, .nubutton.radius-error:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.radius-red:disabled:focus, .nubutton.radius-error:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.radius-red i, .nubutton.radius-error i {
+  padding: 0;
+  margin-right: 0.5em;
+}
+.nubutton.radius-orange, .nubutton.radius-warning {
+  color: white;
+  background-color: #ff8800;
+  transition: 0.5s;
+  border-radius: 5em;
+  padding: 0.75em 2em;
+  min-width: 5em;
+}
+.nubutton.radius-orange:hover, .nubutton.radius-orange:focus, .nubutton.radius-warning:hover, .nubutton.radius-warning:focus {
+  box-shadow: 0 0 8px 0 rgba(255, 136, 0, 0.6);
+}
+.nubutton.radius-orange:disabled, .nubutton.radius-warning:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.radius-orange:disabled:focus, .nubutton.radius-warning:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.radius-orange i, .nubutton.radius-warning i {
+  padding: 0;
+  margin-right: 0.5em;
+}
+.nubutton.radius-green, .nubutton.radius-success {
+  color: white;
+  background-color: #29cc29;
+  transition: 0.5s;
+  border-radius: 5em;
+  padding: 0.75em 2em;
+  min-width: 5em;
+}
+.nubutton.radius-green:hover, .nubutton.radius-green:focus, .nubutton.radius-success:hover, .nubutton.radius-success:focus {
+  box-shadow: 0 0 8px 0 rgba(0, 166, 0, 0.6);
+}
+.nubutton.radius-green:disabled, .nubutton.radius-success:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.radius-green:disabled:focus, .nubutton.radius-success:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.radius-green i, .nubutton.radius-success i {
+  padding: 0;
+  margin-right: 0.5em;
+}
+.nubutton.radius-grey, .nubutton.radius-disabled {
+  color: white;
+  background-color: grey;
+  transition: 0.5s;
+  border-radius: 5em;
+  padding: 0.75em 2em;
+  min-width: 5em;
+}
+.nubutton.radius-grey:hover, .nubutton.radius-grey:focus, .nubutton.radius-disabled:hover, .nubutton.radius-disabled:focus {
+  box-shadow: 0 0 8px 0 rgba(128, 128, 128, 0.6);
+}
+.nubutton.radius-grey:disabled, .nubutton.radius-disabled:disabled {
+  color: white;
+  background-color: grey;
+}
+.nubutton.radius-grey:disabled:focus, .nubutton.radius-disabled:disabled:focus {
+  box-shadow: 0 0 8px 0 transparent;
+}
+.nubutton.radius-grey i, .nubutton.radius-disabled i {
+  padding: 0;
+  margin-right: 0.5em;
+}
+
+/*# sourceMappingURL=nuButtons.css.map */

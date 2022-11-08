@@ -1,0 +1,40 @@
+.inputFieldBlock label, .inputFieldBlock input {
+  display: block;
+}
+.inputFieldBlock label:not(:first-child), .inputFieldBlock input:not(:first-child) {
+  margin-top: 0.65em;
+}
+.inputFieldBlock label {
+  padding: 0 0.25em;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+.inputFieldBlock label.inputFieldLabel {
+  opacity: 0.8;
+}
+.inputFieldBlock label.inputFieldRequired {
+  color: red;
+  opacity: 0.9;
+}
+.inputFieldBlock input.inputField {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 0.9em;
+  padding: 0.75em;
+  border: 1px solid #949494;
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 0.9);
+  transition: 0.5s;
+}
+.inputFieldBlock input.inputField:focus, .inputFieldBlock input.inputField:hover {
+  outline: none;
+  border-color: #2681fc;
+  box-shadow: 0 0 10px 2px rgba(38, 129, 252, 0.2);
+}
+.inputFieldBlock input.inputField::placeholder {
+  font-size: 1em;
+  color: #000000;
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=nuInputs.css.map */

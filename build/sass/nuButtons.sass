@@ -1,0 +1,119 @@
+=normalButton($background, $shadow_color)
+  color: white
+  background-color: $background
+  transition: .5s
+  &:hover,
+  &:focus
+    box-shadow: 0 0 8px 0 $shadow_color
+  &:disabled
+    color: white
+    background-color: grey
+    &:focus
+      box-shadow: 0 0 8px 0 transparent
+
+=lightButton($color, $background)
+  color: $color
+  background-color: $background
+  &:disabled
+    color: #505050
+    background-color: #e5e5e5
+
+=ghostButton($color)
+  background-color: white
+  color: $color
+  border: 1px solid rgba($color, .6)
+  transition: .5s
+  &:hover,
+  &:focus
+    color: white
+    background-color: $color
+
+=raisedButton($color)
+  background-color: white
+  color: $color
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, .2)
+
+=radiusButton($background, $shadow_color)
+  +normalButton($background, $shadow_color)
+  border-radius: 5em
+  padding: .75em 2em
+  min-width: 5em
+  i
+    padding: 0
+    margin-right: .5em
+
+// Settings
+.nubutton
+  font-weight: bold
+  border: 1px solid transparent
+  border-radius: .25em
+  padding: .75em 2em
+  cursor: pointer
+  min-width: 9em
+  text-align: center
+  letter-spacing: .1em
+  &:focus
+    outline: none
+  &.normal
+    &-blue
+      +normalButton(#326eee, rgba(50, 110, 238, .5))
+    &-lightblue
+      +normalButton(#08b2f8, rgba(8, 178, 148, .5))
+    &-red, &-error
+      +normalButton(#ff2727, rgba(255, 39, 39, .5))
+    &-orange, &-warning
+      +normalButton(#ff8800, rgba(255, 136, 74, .5))
+    &-green, &-success
+      +normalButton(#29cc29, rgba(41, 204, 41, .5))
+    &-grey, &-disabled
+      +normalButton(grey, transparent)
+  &.light
+    &-blue
+      +lightButton(#4a4aff, #d4e2ff)
+    &-lightblue
+      +lightButton(#4a4aff, #abdbff)
+    &-red, &-error
+      +lightButton(#ff2828, #ffd4d4)
+    &-orange, &-warning
+      +lightButton(#e17707, #ffd8af)
+    &-green, &-success
+      +lightButton(#00a600, #caf6ca)
+    &-grey, &-disabled
+      +lightButton(#505050, #e5e5e5)
+  &.ghost
+    &-blue
+      +ghostButton(#4a4aff)
+    &-lightblue
+      +ghostButton(#08b2f8)
+    &-red, &-error
+      +ghostButton(#ff2828)
+    &-orange, &-warning
+      +ghostButton(#ea7c08)
+    &-green, &-success
+      +ghostButton(#25b725)
+  &.raised
+    &-blue
+      +raisedButton(#4a4aff)
+    &-lightblue
+      +raisedButton(#08b2f8)
+    &-red, &-error
+      +raisedButton(#ff2828)
+    &-orange, &-warning
+      +raisedButton(#ea7c08)
+    &-green, &-success
+      +raisedButton(#00a600)
+  &.radius
+    &-blue
+      +radiusButton(#326eee, rgba(50, 110, 238, .6))
+    &-lightblue
+      +radiusButton(#08b2f8, rgba(8, 148, 248, .6))
+    &-red, &-error
+      +radiusButton(#ff2828, rgba(255, 40, 40, .6))
+    &-orange, &-warning
+      +radiusButton(#ff8800, rgba(255, 136, 0, .6))
+    &-green, &-success
+      +radiusButton(#29cc29, rgba(#00a600, .6))
+    &-grey, &-disabled
+      +radiusButton(grey, rgba(128, 128, 128, .6))
+
+// Everybody dance now!

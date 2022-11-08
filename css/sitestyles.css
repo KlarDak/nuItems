@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: #f2f5f7;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.nuButtonsPresents, ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 1em;
+    width: 90%;
+}
+
+.nuInputsPresents li {
+    display: table-cell;
+    width: 25%;
+    padding-right: 1em;
+}
+
+.nuButtonsPresents li {
+    display: table-cell;
+    padding: .5em;
+    width: 12%;
+    text-align: center;
+}
+
+.nuButtonsPresents li p {
+    font-size: .9em;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+footer address {
+    text-align: center;
+    padding: .5em 0;
+    font-style: normal;
+}
+
+footer address a {
+    text-decoration: none;
+}
