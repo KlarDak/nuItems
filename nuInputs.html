@@ -5,34 +5,41 @@
     <title>nuInputs | InScriptKid</title>
     <link rel="stylesheet" href="/css/sitestyles.css">
     <link rel="stylesheet" href="/css/nuInputs.css">
+    <script src="/js/nuInputs.js"></script>
 </head>
 <body>
     <h1>nuInputs</h1>
     <ul class="nuInputsPresents">
         <li>
-            <div class="inputFieldBlock FIOElem">
+            <div class="inputFieldBlock FIOElemBox">
                 <label class="inputFieldLabel FIOElem_Label">Ваши фамилия и инициалы</label>
-                <input type="text" class="inputField FIOElem_Field" id="FIOElem" placeholder="Проверка" name="fioelem">
+                <input type="text" class="inputField FIOElem" id="FIOElem" placeholder="Проверка" name="fioelem">
                 <label class="inputFieldRequired FIOElem_Required">Обязательное поле</label>
             </div>
         </li>
         <li>
-            <div class="inputFieldBlock EmailElem">
+            <div class="inputFieldBlock EmailElemBox">
                 <label class="inputFieldLabel EmailElem_Label">Электронная почта</label>
-                <input type="email" class="inputField Email_Field" id="EmailElem" placeholder="" name="emailelem">
+                <input type="email" class="inputField EmailElem" id="EmailElem" placeholder="" name="emailelem">
                 <label class="inputFieldRequired EmailElem_Required">Обязательное поле</label>
             </div>
         </li>
         <li>
-            <div class="inputFieldBlock PasswordElem">
-                <label class="inputFieldLabel PasswordElem_Label">Пароль</label>
+            <div class="inputFieldBlock PasswordElemBox">
+                <label class="inputFieldLabel PasswordElem">Пароль</label>
                 <input type="password" class="inputField PasswordElem_Field" id="PasswordElem" placeholder="" name="passwordelem">
                 <label class="inputFieldRequired PasswordElem_Required">Обязательное поле</label>
             </div>
+        </li>
+        <li>
+            <div id="test"></div>
         </li>
     </ul>
     <footer>
         <address>KDS - InScriptKid, <a href="https://wwbt.blog">https://wwbt.blog</a></address>
     </footer>
+    <script>
+        nuInputs.addInputField(test, {id: "a", placeholder: "TEST", isRequired: true});
+    </script>
 </body>
 </html>
